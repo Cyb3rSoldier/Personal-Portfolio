@@ -275,16 +275,77 @@ a {
     margin-top: 10rem;
 }
 .portfolio-container{
-    display: grid;
+    display: inline;
     grid-template-columns: repeat(2,1fr);
     gap: 3rem;
 }
-.portfolio-box .numb{
-    font-size: 6rem;
-    color: #d1b986;
-    line-height: 1;
+.portfolio-box h3{
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+    color: rgb(37, 56, 56);
+    background: rgb(79, 159, 196);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 20rem;
 }
-#arrow{
+.portfolio-box h3 {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.portfolio-box h3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.portfolio-box p,pre{
+    font-size: 1.1rem;
+    color: rgb(245, 250, 250);
+    margin-top: 1rem;
+    width: 30rem;
+}
+.portfolio-box .tech p{
+    color: #d1b986;
+    border-bottom: .1rem solid ivory;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    width: 30rem;
+}
+
+.portfolio-container .portfolio-box .portfolio-detail{
+    margin-left: 6rem;
+    margin-top: 5rem;
+    border: 6px solid rgb(15, 110, 148);
+    padding: 5rem;
+    border-radius: 2rem;
+    width: 89%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    
+}
+#pin{
     height: 2rem;
     width: 2rem;
+}
+.icon2{
+    padding-top: 1.5rem;
+}
+.icon2 a {
+    display: inline-flex;
+    padding: 5px;
+    border: 2px solid rgb(209, 185, 134);
+    border-radius: 40%;
+    font-size: 30px;
+    color: rgb(209, 185, 134);
+    margin: 0 15px;
+
+}
+
+.icon2 a:hover {
+    background: #d1b986;
+    color: rgb(77, 95, 104);
+    box-shadow: 0 0 5px rgb(209, 185, 134);
+}
+.icon2 #gitspan{
+    font-size: 1.5rem;
+    color: rgb(245, 250, 250);
 }
