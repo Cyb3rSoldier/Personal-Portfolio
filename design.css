@@ -150,7 +150,7 @@ a {
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
-    border-radius: 2px;
+    border-radius: 2px; 
 }
 .education .box-container .edu-box span{
     font-size: 1.1rem;
@@ -226,4 +226,65 @@ a {
     background: #d1b986;
     color: rgb(77, 95, 104);
     box-shadow: 0 0 5px rgb(209, 185, 134);
+}
+.skill .heading{
+    margin-left: 7%;
+    margin-top: 10rem;
+}
+.skill .skill-box{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    padding-left: 7rem;
+    padding-right: 7rem ;
+}
+#logo{
+    height:70px;
+    width: 70px;
+
+}
+#logospan{
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #d1b986;
+    font-size: 1.2rem;
+
+}
+.skill .skill-box .skill-list{
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategray;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    height: 12rem;
+    width: 12rem;
+}
+.skill-list {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-list:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.Portfolio .heading{
+    margin-left: 7%;
+    margin-top: 10rem;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.portfolio-box .numb{
+    font-size: 6rem;
+    color: #d1b986;
+    line-height: 1;
+}
+#arrow{
+    height: 2rem;
+    width: 2rem;
 }
