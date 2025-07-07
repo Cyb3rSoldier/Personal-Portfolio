@@ -7,7 +7,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: border-box;
 }
+
+/*NAV BAR SECTION*/
 
 a {
     text-decoration: none;
@@ -51,10 +54,12 @@ a {
     color: rgb(238, 119, 34);
 }
 
+/*HOME SECTION DESIGN*/
+
 .home {
     display: flex;
     align-items: center;
-    padding: 10px 7% 0 ;
+    padding: 10px 7% 0;
     height: 100vh;
     color: rgb(245, 250, 250);
     gap: 3rem;
@@ -96,21 +101,17 @@ a {
 .img .img-box {
     height: 33vw;
     width: 33vw;
-    background: red;
     border-radius: 50%;
-    
 }
 
 .img .img-box .img-item {
     position: relative;
     width: 100%;
     height: 100%;
-    background: slateblue;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     overflow: hidden;
-    
 }
 
 .img .img-box .img-item img {
@@ -119,38 +120,38 @@ a {
     width: 100%;
     object-fit: cover;
 }
-.about{
-    display: flex;
-    padding: 10rem 7% 0 ;
-}
-.contact{
-    display: flex;
-    padding: 0 7% 0 ;
-}
-.education{
-    display: flex;
-    padding: 6rem 7% 0 ;
-}
-.skill{
-    padding: 6rem 7% 0 ;
-}
-.Portfolio{
-    padding: 7rem 7% 0 ;
-}
-.heading{
+
+.heading {
     font-size: 3rem;
     color: rgb(245, 250, 250);
 }
-.about-content p{
-    font-size:  1.5rem;
+
+/*ABOUT SECTION DESIGN*/
+
+.about {
+    display: flex;
+    padding: 10rem 7% 0;
+}
+
+.about-content p {
+    font-size: 1.5rem;
     margin: 2rem 0 6rem;
     color: rgb(245, 250, 250);
 }
-#span{
+
+#span {
     color: rgb(238, 119, 34);
     font-size: larger;
 }
-.education .box-container{
+
+/*EDUCATION SECTION DESIGN*/
+
+.education {
+    display: flex;
+    padding: 6rem 7% 0;
+}
+
+.education .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,115 +159,88 @@ a {
     padding: 1rem 0;
     padding-left: 3rem;
 }
-.education .box-container .edu-box{
+
+.education .box-container .edu-box {
     width: 100%;
     margin: 1rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
-.education .box-container .edu-box span{
+
+.education .box-container .edu-box span {
     font-size: 1.1rem;
     background: rgb(79, 159, 196);
     color: rgb(37, 56, 56);
     border-radius: 1rem;
     padding: .5rem 1rem;
+    transition-timing-function: linear;
 }
-.education .box-container .edu-box span:hover{
+
+.education .box-container .edu-box span:hover {
     transform: scale(1.2);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
 }
-.education .box-container .edu-box h3{
+
+.education .box-container .edu-box h3 {
     font-size: 1.2rem;
     color: rgb(245, 250, 250);
     padding: 1rem 0;
 }
-.education .box-container .edu-box pre{
+
+.education .box-container .edu-box pre {
     font-size: 1.1rem;
     color: rgb(245, 250, 250);
     padding: .6em 0;
 }
-#institution{
+
+#institution {
     color: #d1b986;
     font-size: 1.5rem;
 }
-#institution2{
+
+#institution2 {
     color: #d1b986;
     font-size: 1.5rem;
     margin-top: 2rem;
 }
-.contact{
-    padding: 11rem 7% 0 ;
+
+/*SKILLS SECTION DESIGN*/
+
+.skill {
+    padding: 6rem 7% 0;
 }
-.contact form{
-    width: 50rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    margin: 0 5rem;
-}
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contact form .input-box input{
-    width: 35rem;
-    padding: 1rem;
-    margin: 1.3rem 0;
-    font-size: 1rem;
-    border-radius: .8rem;
-    height: 3rem;
-}
-.contact form textarea{
-    width: 35rem;
-    padding: 1rem;
-    margin: 1.3rem 0;
-    font-size: 1rem;
-    border-radius: .8rem;
-    height: 12rem;
-    display: flex;
-}
-.contact form .btn{
-    display: flex;
-    padding: .4rem;
-    border: 1px solid rgb(77, 95, 104);
-    border-radius: 5px;
-    font-size: 1rem;
-    color: rgb(209, 185, 134);
-    background: #d1b986;
-    color: rgb(77, 95, 104);
-    font-weight: bold;
-    margin-bottom: 5rem;
-    align-items: center;
-}
-.homeInfo .icon a:hover {
-    background: #d1b986;
-    color: rgb(77, 95, 104);
-    box-shadow: 0 0 5px rgb(209, 185, 134);
-}
-.skill .skill-box{
+
+.skill .skill-box {
     display: flex;
     align-items: center;
     gap: 7rem;
     flex-wrap: wrap;
     padding: 5rem 0;
     padding-left: 7rem;
-    padding-right: 7rem ;
+    padding-right: 7rem;
 }
-#logo{
-    height:70px;
+
+#logo {
+    height: 70px;
     width: 70px;
 
 }
-#logospan{
+
+#logospan {
     align-items: center;
     margin-bottom: 2rem;
     color: #d1b986;
     font-size: 1.2rem;
-
 }
-.skill .skill-box .skill-list{
+
+#logospan:hover {
+    font-size: 1.5rem;
+}
+
+.skill .skill-box .skill-list {
     display: flex;
     flex-direction: column;
     background-color: darkslategray;
@@ -277,65 +251,20 @@ a {
     height: 12rem;
     width: 14rem;
 }
+
 .skill-list {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .skill-list:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-.portfolio-detail h3{
-    font-size: 2.2rem;
-    margin: 0 0 2rem;
-    color: rgb(37, 56, 56);
-    background: rgb(79, 159, 196);
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 26rem;
-}
-.portfolio-detail h3 {
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-.portfolio-detail h3:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-.portfolio-detail p,pre{
-    font-size: 1.2rem;
-    color: rgb(245, 250, 250);
-    margin-top: 1rem;
-    width: 30rem;
-}
-.portfolio-detail .tech p{
-    color: #d1b986;
-    font-size: 1.3rem;
-    border-bottom: .1rem solid ivory;
-    padding-top: 2rem;
-    padding-bottom: 1.2rem;
-    display: flex;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    width: 31rem;
-}
 
-.portfolio-container{
-    display: flex;
-   
-    margin-top: 5rem;
-    border: 6px solid rgb(15, 110, 148);
-    padding: 2rem;
-    border-radius: 2rem;
-    gap: 2.5rem;
-    align-items: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-}
-#pin{
-    height: 2rem;
-    width: 2rem;
-}
-.icon2{
+.icon2 {
     padding-top: 1.5rem;
 }
+
 .icon2 a {
     display: inline-flex;
     padding: 5px;
@@ -352,31 +281,236 @@ a {
     color: rgb(77, 95, 104);
     box-shadow: 0 0 5px rgb(209, 185, 134);
 }
-.icon2 #gitspan{
+
+.icon2 #gitspan {
     font-size: 1.4rem;
     color: rgb(245, 250, 250);
 }
-.portfolio-sample{
-  max-width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;
-  margin: 0 auto;
-  background-color:transparent;
-  padding: 1rem;
+
+/*PORTFOLIO SECTION DESIGN*/
+
+.Portfolio {
+    padding: 7rem 7% 0;
 }
-footer{
+
+.carousel-section {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.carousel {
+    position: relative;
+    height: 520px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slide1:checked~.carousel .slide-1,
+#slide2:checked~.carousel .slide-2 {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.content {
+    background: #1e1e1e;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    height: 450px;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.content video {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.info h3 {
+    margin: 0 0 10px;
+    font-size: 1.7rem;
+    color: #d1b986;
+    font-weight: 900;
+}
+
+.info h3:hover {
+    transform: scale(1.05);
+}
+
+.info p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+.tags span {
+    display: inline-block;
+    background: #d1b986;
+    color: #000;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.icon2 {
+    margin-top: 10px;
+}
+
+#gitspan {
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+/* Arrows */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #d1b986;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+    transition: color 0.3s;
+}
+
+.nav:hover {
+    color: #fff;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: auto;
+    }
+
+    .content video {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel {
+        height: auto;
+    }
+}
+
+/*CONTACT SECTION DESIGN*/
+
+.contact {
+    display: flex;
+    padding: 7% 0;
+}
+
+.contact form {
+    width: 50rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin: 0 5rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input {
+    width: 35rem;
+    padding: 1rem;
+    margin: 1.3rem 0;
+    font-size: 1rem;
+    border-radius: .8rem;
+    height: 3rem;
+}
+
+.contact form textarea {
+    width: 35rem;
+    padding: 1rem;
+    margin: 1.3rem 0;
+    font-size: 1rem;
+    border-radius: .8rem;
+    height: 12rem;
+    display: flex;
+}
+
+.contact form .btn {
+    display: flex;
+    padding: .4rem;
+    border: 1px solid rgb(77, 95, 104);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: rgb(209, 185, 134);
+    background: #d1b986;
+    color: rgb(77, 95, 104);
+    font-weight: bold;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+/*FOOTER SECTION DESIGN*/
+
+footer {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 5rem;
     height: 22rem;
+    width: 100%;
 }
-footer #thanks{
+
+footer #thanks {
     text-align: center;
     font-weight: 900;
     color: #d1b986;
     font-size: 2.5rem;
 }
+
 .footer-detail {
     text-align: left;
     font-size: 1rem;
