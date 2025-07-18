@@ -13,7 +13,4 @@ This is my personal portfolio built using HTML, CSS, and PHP, designed to showca
 
 📬 Contact form layout (frontend integrated with PHP backend)
 
-🛠️ Tech Stack
-HTML5
-CSS3
-PHP
+🛠️ Tech Stack: HTML5, CSS3, PHP
