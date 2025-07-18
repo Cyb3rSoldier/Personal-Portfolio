@@ -1,3 +1,38 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$mobile = $_POST['mobile'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+// Step 2: Connect to MySQL database
+$conn = new mysqli('localhost', 'root', '', 'personal_portfolio');
+
+// Step 3: Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Step 4: Prepare and execute SQL statement
+$stmt = $conn->prepare("INSERT INTO queries (Name, Email, Phone, Subject, Message) VALUES (?, ?, ?, ?, ?)");
+$stmt->bind_param("ssiss", $name, $email, $mobile, $subject , $message);
+
+if ($stmt->execute()) {
+    echo "Massage send successfully!";
+} else {
+    echo "Error: " . $stmt->error;
+}
+
+// Step 5: Close connections
+$stmt->close();
+$conn->close();
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -143,6 +178,10 @@ GPA: 5 out of 5</pre>
                 <span id="logospan"><b>MySQL</b></span>
                 <img id="logo" src="mysql-icon.png">
             </div>
+            <div class="skill-list">
+                <span id="logospan"><b>PHP</b></span>
+                <img id="logo" src="php.png">
+            </div>
         </div>
     </section>
 
@@ -181,7 +220,7 @@ GPA: 5 out of 5</pre>
                             </div>
                         </div>
                     </div>
-                    <label for="slide2" class="nav right">›</label>
+                    <label for="slide2" class="nav right">></label>
                 </div>
 
                 <!-- Project 2 -->
@@ -207,7 +246,7 @@ GPA: 5 out of 5</pre>
                             </div>
                         </div>
                     </div>
-                    <label for="slide1" class="nav left">‹</label>
+                    <label for="slide1" class="nav left"><</label>
                 </div>
 
             </div>
@@ -217,16 +256,16 @@ GPA: 5 out of 5</pre>
 
         <section class="contact" id="contact">
             <h2 class="heading">CONTACT <span id="span">ME</span></h2>
-            <form action="#">
+            <form action="index.php" method="post">
                 <div class="input-box">
-                    <input type="text" placeholder="Enter Your Name">
-                    <input type="email" placeholder="Enter your Email Address">
+                    <input type="text" placeholder="Enter Your Name" name="name" required>
+                    <input type="email" placeholder="Enter your Email" name="email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Enter Your Mobile Number">
-                    <input type="text" placeholder="Enter Email subject">
+                    <input type="number" placeholder="Enter Your Mobile Number" name="mobile" >
+                    <input type="text" placeholder="Enter Email subject" name="subject" required>
                 </div>
-                <textarea name="area" placeholder="Your Message"></textarea>
+                <textarea placeholder="Your Message" name="message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
         </section>
