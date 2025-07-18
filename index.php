@@ -1,3 +1,37 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$mobile = $_POST['mobile'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+// Step 2: Connect to MySQL database
+$conn = new mysqli('localhost', 'root', '', 'personal_portfolio');
+
+// Step 3: Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Step 4: Prepare and execute SQL statement
+$stmt = $conn->prepare("INSERT INTO queries (Name, Email, Phone, Subject, Message) VALUES (?, ?, ?, ?, ?)");
+$stmt->bind_param("ssiss", $name, $email, $mobile, $subject , $message);
+
+if ($stmt->execute()) {
+    echo "Massage send successfully!";
+} else {
+    echo "Error: " . $stmt->error;
+}
+
+// Step 5: Close connections
+$stmt->close();
+$conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -221,7 +255,7 @@ GPA: 5 out of 5</pre>
 
         <section class="contact" id="contact">
             <h2 class="heading">CONTACT <span id="span">ME</span></h2>
-            <form action="connection.php" method="post">
+            <form action="index.php" method="post">
                 <div class="input-box">
                     <input type="text" placeholder="Enter Your Name" name="name" required>
                     <input type="email" placeholder="Enter your Email" name="email" required>
