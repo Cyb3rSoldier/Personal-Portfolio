@@ -58,6 +58,7 @@ a {
 
 .home {
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 0 7% 0;
     height: 100vh;
@@ -501,6 +502,10 @@ footer #thanks {
 
 /* Responsive */
 
-@media only screen and (max-width: 600px){
-    
+@media (max-width: 500px){
+    .home {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    height: 50vh !important;
+}
 }
