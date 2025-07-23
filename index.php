@@ -1,3 +1,36 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $mobile = $_POST['mobile'];
+    $message = $_POST['message'];
+
+    // Step 2: Connect to MySQL database
+    $conn = new mysqli('sql306.infinityfree.com', 'if0_39505368', 'Ofr243274', 'if0_39505368_Personal_Portfolio');
+
+    // Step 3: Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Step 4: Prepare and execute SQL statement
+    $stmt = $conn->prepare("INSERT INTO queries (Name, Email, Phone, Message) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssis", $name, $email, $mobile, $message);
+
+    if ($stmt->execute()) {
+        echo "Massage send successfully!";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+
+    // Step 5: Close connections
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -233,16 +266,15 @@ GPA: 5 out of 5</pre>
 
         <section class="contact" id="contact">
             <h2 class="heading">CONTACT <span id="span">ME</span></h2>
-            <form action="connection.php" method="post">
+            <form action="index.php" method="post">
                 <div class="input-box">
                     <input type="text" placeholder="Enter Your Name" name="name" required>
                     <input type="email" placeholder="Enter your Email" name="email" required>
                 </div>
                 <div class="input-box">
                     <input type="number" placeholder="Enter Your Mobile Number" name="mobile">
-                    <input type="text" placeholder="Enter Email subject" name="subject" required>
                 </div>
-                <textarea placeholder="Your Message" name="message" required></textarea>
+                <textarea placeholder="Your Message/Feedback" name="message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
         </section>
