@@ -28,7 +28,7 @@ a {
     align-items: center;
     z-index: 100;
     background-color: #233d39;
-    z-index: 1;
+    z-index: 100;
 }
 
 .navbar,
@@ -80,6 +80,7 @@ a {
 .homeInfo p {
     font-size: 1.1rem;
     margin: 15px 0 25px;
+    text-align: justify;
 }
 
 .homeInfo .icon a {
@@ -293,6 +294,7 @@ a {
 
 .Portfolio {
     padding: 7rem 7% 0;
+    z-index: -1;
 }
 
 .carousel-section {
@@ -503,11 +505,33 @@ footer #thanks {
 
 /* Responsive */
 
-@media (max-width:500px) {
+@media (max-width:767px) {
     .home {
         flex-direction: column-reverse !important;
         align-items: center !important;
-        margin-top: 10vh;
+        margin-top: 5vh;
+        gap: 15px
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .img .img-box {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .homeInfo h1 {
+        font-size: 2.3rem;
+    }
+
+    .homeInfo h3 {
+        font-size: 1rem;
+    }
+
+    .homeInfo p {
+        font-size: .9rem;
     }
 
 }
