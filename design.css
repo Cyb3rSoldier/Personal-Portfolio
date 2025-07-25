@@ -510,7 +510,7 @@ footer #thanks {
         flex-direction: column-reverse !important;
         align-items: center !important;
         margin-top: 5vh;
-        gap: 15px
+        gap: 18px
     }
 
     .navbar {
@@ -523,7 +523,7 @@ footer #thanks {
     }
 
     .homeInfo h1 {
-        font-size: 2.3rem;
+        font-size: 2.7rem;
     }
 
     .homeInfo h3 {
@@ -533,5 +533,110 @@ footer #thanks {
     .homeInfo p {
         font-size: .9rem;
     }
+
+    .about {
+        padding-top: 3.5rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        margin: 1.5rem 0 0;
+    }
+
+    .heading {
+        font-size: 2.4rem;
+    }
+
+    .homeInfo .icon a {
+        font-size: 23px;
+    }
+
+    .homeInfo .icon a:hover {
+        background: #d1b986;
+        color: rgb(77, 95, 104);
+        box-shadow: 0 0 5px rgb(209, 185, 134);
+    }
+
+    .education {
+        padding-top: 3rem;
+        flex-direction: column;
+    }
+
+    .education .box-container {
+        padding-top: 2rem;
+        padding-left: 0;
+    }
+
+    .education .box-container .edu-box {
+        margin: 1rem 1rem;
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .education .box-container .edu-box span {
+        font-size: 1rem;
+        border-radius: 1rem;
+        padding: .6rem 1rem;
+    }
+
+    #institution2 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+
+    .education .box-container .edu-box pre {
+        font-size: 1rem;
+        padding: .5rem 0;
+    }
+
+    .skill {
+        padding: 2rem 7% 0;
+    }
+
+    .skill .skill-box .skill-list {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .skill .skill-box {
+        gap: 3rem;
+        padding: 4rem 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .Portfolio {
+        padding: 1rem 7% 0;
+    }
+
+    .content {
+        border-radius: 50px;
+        padding: 15px;
+        padding-top: 7rem;
+        width: 100%;
+        height: 120vh;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info h3 {
+        margin: 2rem 0 1rem;
+        font-size: 1.3rem;
+    }
+
+    .icon2 #gitspan {
+        font-size: 1.1rem;
+    }
+
+    .icon2 a {
+        font-size: 25px;
+    }
+
+    .icon2 {
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+
 
 }
