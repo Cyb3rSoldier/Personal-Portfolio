@@ -1,16 +1,19 @@
-🌐 Personal Portfolio Website
 Hi, I'm Omar Faruk Rakib — a CSE student and aspiring full-stack web developer.
-This is my personal portfolio built using HTML, CSS, and PHP, designed to showcase my skills, education, and projects in a clean, responsive layout.
+This is my personal portfolio website, built using HTML, CSS, PHP, and MySQL, designed to showcase my skills, education, and projects in a clean, responsive layout.
+
+📍 Live Preview: https://omar.great-site.net/
 
 ✨ Features
-✅ Fully responsive design
+✅ Fully Responsive Design
+🎥 Project Showcase with Embedded Videos
+📚 Education & Skills Section
+🔗 Social Links (LinkedIn, GitHub, etc.)
+📬 Contact Form – Frontend integrated with PHP & MySQL backend
+💾 Database Integration – Stores messages using MySQL
 
-🎥 Project showcase with embedded videos
-
-📚 Education & skills section
-
-🔗 Social links (LinkedIn, GitHub, etc.)
-
-📬 Contact form layout (frontend integrated with PHP backend)
-
-🛠️ Tech Stack: HTML5, CSS3, PHP
+🛠️ Tech Stack
+Frontend: HTML5, CSS3
+Backend: PHP
+Database: MySQL
+Version Control: Git & GitHub
+Hosting: InfinityFree (Free Hosting Platform)
