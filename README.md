@@ -13,7 +13,11 @@ This is my personal portfolio website, built using HTML, CSS, PHP, and MySQL, de
 
 🛠️ Tech Stack
 Frontend: HTML5, CSS3
+
 Backend: PHP
+
 Database: MySQL
+
 Version Control: Git & GitHub
+
 Hosting: InfinityFree (Free Hosting Platform)
