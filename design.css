@@ -182,7 +182,7 @@ a {
 }
 
 .education .box-container .edu-box span:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     font-size: 1.3rem;
 }
@@ -523,7 +523,7 @@ footer #thanks {
     }
 
     .homeInfo h1 {
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
 
     .homeInfo h3 {
@@ -531,7 +531,7 @@ footer #thanks {
     }
 
     .homeInfo p {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .about {
@@ -539,7 +539,7 @@ footer #thanks {
     }
 
     .about-content p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin: 1.5rem 0 0;
     }
 
@@ -548,13 +548,7 @@ footer #thanks {
     }
 
     .homeInfo .icon a {
-        font-size: 23px;
-    }
-
-    .homeInfo .icon a:hover {
-        background: #d1b986;
-        color: rgb(77, 95, 104);
-        box-shadow: 0 0 5px rgb(209, 185, 134);
+        font-size: 14px;
     }
 
     .education {
@@ -579,6 +573,12 @@ footer #thanks {
         padding: .6rem 1rem;
     }
 
+    .education .box-container .edu-box span:hover {
+        transform: scale(1.1);
+        font-size: 1.1rem;
+    }
+
+
     #institution2 {
         font-size: 1.3rem;
         margin-top: 1.5rem;
@@ -594,8 +594,8 @@ footer #thanks {
     }
 
     .skill .skill-box .skill-list {
-        height: 10rem;
-        width: 10rem;
+        height: 8rem;
+        width: 7rem;
     }
 
     .skill .skill-box {
@@ -609,34 +609,32 @@ footer #thanks {
         padding: 1rem 7% 0;
     }
 
-    .content {
-        border-radius: 50px;
-        padding: 15px;
-        padding-top: 7rem;
-        width: 100%;
-        height: 120vh;
-        max-width: 100vw;
-        display: flex;
+    .contact {
         flex-direction: column;
     }
 
-    .info h3 {
-        margin: 2rem 0 1rem;
-        font-size: 1.3rem;
+    .contact form {
+        width: 310px;
+        margin: 0 0;
     }
 
-    .icon2 #gitspan {
-        font-size: 1.1rem;
+    .contact form textarea {
+        width: 310px;
     }
 
-    .icon2 a {
-        font-size: 25px;
+    footer #thanks {
+        font-size: 1.5rem;
     }
 
-    .icon2 {
-        margin-top: 0;
-        padding-top: 1rem;
+    .footer-detail {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin-top: 1.1rem;
     }
 
-
+    footer {
+        padding: 1.2rem;
+        height: 50vw;
+        width: 100%;
+    }
 }

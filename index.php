@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssis", $name, $email, $mobile, $message);
 
     if ($stmt->execute()) {
-        echo "Massage send successfully!";
+        echo "";
     } else {
         echo "Error: " . $stmt->error;
     }
