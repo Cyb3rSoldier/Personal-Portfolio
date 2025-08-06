@@ -642,16 +642,17 @@ footer #thanks {
         position: relative;
         width: 100%;
         margin: 60px auto;
-        overflow: hidden;
-        padding: 0px;
-        height: 200vh in !important;
+        overflow: none;
+        padding: 0 20px;
+        height: 100vh !important;
     }
 
     .content {
-        border-radius: 20px;
-        padding: 20px;
-        padding-top: 12rem;
-        height: 170vh;
+        border-radius: 15px;
+        padding: 15px;
+        padding-top: 3rem;
+        width: 100%;
+        height: 100vh;
         display: flex;
         margin-top: 20rem;
         flex-direction: column;
