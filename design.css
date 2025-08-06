@@ -639,21 +639,37 @@ footer #thanks {
     }
 
     carousel-section {
-        margin: 50px auto;
-        padding: 0;
-        height: 100vh;
+        position: relative;
+        width: 100%;
+        margin: 60px auto;
+        overflow: hidden;
+        padding: 0px;
+        height: 150vh;
     }
 
     .content {
-        border-radius: 10px;
-        padding: 10px;
-        padding-top: 1rem;
+        border-radius: 20px;
+        padding: 5px;
+        padding-top: 5rem;
         width: 100%;
-        height: 90vh;
+        height: 170vh;
         max-width: 100vw;
         display: flex;
         margin-top: 20rem;
         flex-direction: column;
+    }
+
+    .info h3 {
+        font-size: 1.5rem;
+    }
+
+    .icon2 #gitspan {
+        font-size: 1.1rem;
+    }
+
+    .icon2 a {
+        font-size: 20px;
+        margin: 0px;
     }
 
     .left {
