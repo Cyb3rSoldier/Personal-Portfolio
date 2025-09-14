@@ -479,6 +479,20 @@ pre {
     align-items: center;
 }
 
+.contact .form-message {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: darksalmon;
+    font-size: 12px;
+}
+
+.contact .form-message span {
+    display: inline-block;
+}
+
+
 /*FOOTER SECTION DESIGN*/
 
 footer {
@@ -621,6 +635,19 @@ footer #thanks {
         width: 310px;
     }
 
+    .contact .form-message {
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: darksalmon;
+        font-size: 12px;
+    }
+
+    .contact .form-message span {
+        display: inline-block;
+    }
+
     footer #thanks {
         font-size: 1.5rem;
     }
@@ -657,8 +684,8 @@ footer #thanks {
     }
 
     .info h3 {
-    margin: 40px 0 10px;
-    font-size: 1.5rem;
+        margin: 40px 0 10px;
+        font-size: 1.5rem;
 
     }
 

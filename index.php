@@ -1,34 +1,5 @@
 <?php
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $mobile = $_POST['mobile'];
-    $message = $_POST['message'];
-
-    // Step 2: Connect to MySQL database
-    $conn = new mysqli('sql306.infinityfree.com', 'if0_39505368', 'Ofr243274', 'if0_39505368_Personal_Portfolio');
-
-    // Step 3: Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Step 4: Prepare and execute SQL statement
-    $stmt = $conn->prepare("INSERT INTO queries (Name, Email, Phone, Message) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssis", $name, $email, $mobile, $message);
-
-    if ($stmt->execute()) {
-        echo "";
-    } else {
-        echo "Error: " . $stmt->error;
-    }
-
-    // Step 5: Close connections
-    $stmt->close();
-    $conn->close();
-}
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section class="home" id="home">
         <div class="homeInfo">
             <h1>Omar Faruk Rakib</h1>
-            <h3>Undergraduate CSE Student | Aspiring Full-Stack Web Developer</h3>
+            <h3>Undergraduate CSE Student | Full-Stack Web Developer</h3>
             <p>I'm a Computer Science student at UITS with a passion for full-stack web development. I turn ideas
                 into responsive, user-friendly web apps and thrive on learning the latest tech. From sleek front-ends to
                 powerful back-ends, I love building things that work—and work well. Always up for new challenges,
@@ -93,21 +64,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section class="about" id="about">
         <div class="about-content">
             <h2 class="heading">ABOUT <span id="span">Me</span></h2>
-            <p>Hello! I’m an enthusiastic and dedicated undergraduate student currently pursuing a degree in Computer
-                Science and Engineering at the University of Information Technology and Sciences (UITS). With a strong
-                foundation in programming and web development, I aspire to become a skilled full-stack web developer.
+            <p>Hello! 👋 I’m an undergraduate Computer Science and Engineering student at UITS with a passion for building impactful digital solutions. My goal is to become a skilled Full-Stack Web Developer who can turn ideas into powerful, user-friendly applications.
 
-                I have hands-on experience with core web technologies including HTML and CSS, and I am well-versed in
-                programming languages such as C, C++, and Java. My academic journey has not only equipped me with solid
-                technical knowledge but has also sharpened my analytical and problem-solving abilities.
+                I work confidently with HTML, CSS, PHP (backend), and MySQL (database), and I also have experience in C, C++, and Java. This mix of web and programming skills helps me design complete projects from frontend to backend with efficiency and creativity.
 
-                Beyond technical skills, I take pride in my strong communication skills and consistently excellent
-                academic performance, which help me collaborate effectively and adapt quickly in dynamic environments. I
-                am always eager to learn new technologies and take on new challenges that push me to grow as a
-                developer.
+                Beyond coding, I bring strong problem-solving skills, adaptability, and teamwork, which help me grow and deliver in dynamic environments. I’m always eager to learn, explore new technologies, and take on challenges that push me forward.
 
-                I’m currently seeking opportunities where I can apply my skills, contribute to impactful projects, and
-                continue my journey toward becoming a proficient full-stack web developer.
+                🚀 Currently, I’m working on full-stack projects and looking for opportunities to collaborate, contribute, and create meaningful solutions.
             </p>
         </div>
     </section>
@@ -266,7 +229,7 @@ GPA: 5 out of 5</pre>
 
         <section class="contact" id="contact">
             <h2 class="heading">CONTACT <span id="span">ME</span></h2>
-            <form action="index.php" method="post">
+            <form action="config.php" method="post">
                 <div class="input-box">
                     <input type="text" placeholder="Enter Your Name" name="name" required>
                     <input type="email" placeholder="Enter your Email" name="email" required>
@@ -275,8 +238,18 @@ GPA: 5 out of 5</pre>
                     <input type="number" placeholder="Enter Your Mobile Number" name="mobile">
                 </div>
                 <textarea placeholder="Your Message/Feedback" name="message" required></textarea>
+                <!-- Success message -->
+                <div class="form-message">
+                    <?php
+                    if (isset($_SESSION['message_success'])) {
+                        echo "<span>" . $_SESSION['message_success'] . "</span>";
+                        unset($_SESSION['message_success']);
+                    }
+                    ?>
+                </div>
                 <input type="submit" value="Send Message" class="btn">
             </form>
+
         </section>
     </section>
 
