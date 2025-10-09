@@ -260,8 +260,8 @@ GPA: 5 out of 5</pre>
         <div class="footer-detail">
             <img src="email.png" height="30px" align="center">&nbsp;<a href="mailto:omarfarukrakib26@gmail.com/"
                 target="_blank"><u>omarfarukrakib26@gmail.com</u></a><br>
-            <img src="whatsapp.png" height="30px" align="center">&nbsp;<a
-                href="https://api.whatsapp.com/send/?phone=%2B8801306002238&text&type=phone_number&app_absent=0/"
+            <img src="whatsapp.png" height="30px" align="center">&nbsp;
+            <a href="https://api.whatsapp.com/send/?phone=%2B8801306002238&text&type=phone_number&app_absent=0/"
                 target="_blank"><u>WhatsApp</u></a><br>
             <img src="location.png" height="30px" align="center">&nbsp;DHAKA, BANGLADESH
         </div>
