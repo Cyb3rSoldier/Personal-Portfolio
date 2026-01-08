@@ -118,16 +118,20 @@ GPA: 5 out of 5</pre>
         <h2 class="heading">MY <span id="span">SKILLS</span></h2>
         <div class="skill-box">
             <div class="skill-list">
-                <span id="logospan"><b>HTML</b></span>
-                <img id="logo" src="html-icon.png">
+                <span id="logospan"><b>JavaScript</b></span>
+                <img id="logo" src="js-icon.png">
+            </div>
+            <div class="skill-list">
+                <span id="logospan"><b>Python</b></span>
+                <img id="logo" src="python-icon.png">
+            </div>
+            <div class="skill-list">
+                <span id="logospan"><b>PHP</b></span>
+                <img id="logo" src="php.png">
             </div>
             <div class="skill-list">
                 <span id="logospan"><b>CSS</b></span>
                 <img id="logo" src="css-icon.png">
-            </div>
-            <div class="skill-list">
-                <span id="logospan"><b>C</b></span>
-                <img id="logo" src="c-icon.png">
             </div>
             <div class="skill-list">
                 <span id="logospan"><b>C++</b></span>
@@ -138,12 +142,16 @@ GPA: 5 out of 5</pre>
                 <img id="logo" src="java-icon.png">
             </div>
             <div class="skill-list">
-                <span id="logospan"><b>MySQL</b></span>
-                <img id="logo" src="mysql-icon.png">
+                <span id="logospan"><b>HTML</b></span>
+                <img id="logo" src="html-icon.png">
             </div>
             <div class="skill-list">
-                <span id="logospan"><b>PHP</b></span>
-                <img id="logo" src="php.png">
+                <span id="logospan"><b>C</b></span>
+                <img id="logo" src="c-icon.png">
+            </div>
+            <div class="skill-list">
+                <span id="logospan"><b>MySQL</b></span>
+                <img id="logo" src="mysql-icon.png">
             </div>
         </div>
     </section>
